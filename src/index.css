@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home-bg-img-desktop { 
+    background-image: url("./img/background-home-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overflow: scroll;
+    z-index: -100;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.destination-bg-img { 
+    background-image: url("./img/background-destination-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overflow: scroll;
+    z-index: -100;
+}
+
+.crew-bg-img { 
+    background-image: url("./img/background-crew-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overflow: scroll;
+    z-index: -100;
+}
+
+@media only screen and (max-width: 1024px){
+    .home-bg-img-desktop { 
+        background-image: url("./img/background-home-tablet.jpg");
+    }
+    .destination-bg-img { 
+        background-image: url("./img/background-destination-tablet.jpg");
+    }
+    .crew-bg-img { 
+        background-image: url("./img/background-crew-tablet.jpg");
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .home-bg-img-desktop { 
+        background-image: url("./img/background-home-mobile.jpg");
+    }
+    .destination-bg-img { 
+        background-image: url("./img/background-destination-mobile.jpg");
+    }
+    .crew-bg-img { 
+        background-image: url("./img/background-crew-mobile.jpg");
+    }
 }
