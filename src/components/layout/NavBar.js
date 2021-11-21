@@ -18,7 +18,7 @@ const NavBar = () => {
         </div>
         <div className="border-gray-500 border-b w-full ml-10 -mr-6 z-30 hidden sm:hidden md:hidden lg:block"></div>
       </div>
-      <div className="bg-white hidden sm:block w-full lg:mt-8 z-10 bg-opacity-10 h-24 backdrop-filter backdrop-blur-lg rounded-sm">
+      <div className="bg-white hidden sm:block w-full lg:mt-8 z-10 bg-opacity-10 h-24 backdrop-filter backdrop-blur-lg rounded-sm shadow-2xl">
         <div className="flex justify-evenly h-full items-center">
           {navitems.map((item, idx) => (
             <div key={idx} className="border-b-4 text-center h-full">

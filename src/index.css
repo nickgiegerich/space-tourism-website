@@ -24,15 +24,53 @@
     z-index: -100;
 }
 
-.crew-bg-img { 
-    background-image: url("./img/background-crew-desktop.jpg");
+.crew-bg { 
+    background: url("./img/background-crew-desktop.jpg") no-repeat 50% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
+    padding: 76px 0 94px 0;
+    position: relative;
+    min-height: 100vh;
+    /* height: 100vh;
+    width: 100vw; */
+    z-index: -100; 
+    /* overflow: scroll; */
+}
+
+.main { 
+    padding-top: 136px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    /* min-height: 100vh; */
+}
+
+.crew-container { 
+    position: relative;
+    /* TOP LEFT BOTTOM RIGHT */
+    padding: 76px 0 94px 0;
     overflow: scroll;
-    z-index: -100;
+}
+
+.crew-body { 
+    padding-top: 136px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    /* max-width: 60rem; */
+}
+
+.crew-img { 
+    position: absolute;
+    right: 9.5%;
+    bottom: 0;
+}
+.container { 
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
 @media only screen and (max-width: 1024px){
