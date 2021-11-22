@@ -24,17 +24,19 @@ const Crew = () => {
 
   return (
     <div className="crew-bg">
-      <div className="main">
+      <div className="main md:flex-col lg:inline-block">
         <div className="mx-auto max-w-4xl">
           <PageTitle number={"02"} title={"meet your crew"} />
           <CrewInfo />
-          <CrewSelector />
-          <CrewSelector />
-          <CrewSelector />
-          <CrewSelector />
+          <div className="md:text-center lg:text-justify">
+            <CrewSelector />
+            <CrewSelector />
+            <CrewSelector />
+            <CrewSelector />
+          </div>
         </div>
-        <div className="crew-img">
-          <img alt="Crew Member" src="/assets/crew/image-douglas-hurley.png" />
+        <div className="md:block lg:absolute lg:bottom-0 lg:right-14">
+          <img className="md:m-auto lg:mx-0" alt="Crew Member" src="/assets/crew/image-douglas-hurley.png" />
         </div>
       </div>
 
