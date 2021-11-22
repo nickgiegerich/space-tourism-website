@@ -11,7 +11,7 @@ const navitems = [
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="flex w-full justify-between fixed">
+    <div className="flex w-full justify-between fixed z-50">
       <div className="w-1/3 mt-8 sm:w-1/2 md:w-1/2 lg:w-full lg:mt-8 flex items-center justify-items-start">
         <div className="pl-10">
           <img src="/logos/logo.svg" />

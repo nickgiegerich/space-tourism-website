@@ -33,7 +33,7 @@
     padding: 76px 0 94px 0;
     position: relative;
     min-height: 100vh;
-    z-index: -100; 
+    z-index: 0; 
 }
 
 .main { 
