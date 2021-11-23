@@ -33,7 +33,7 @@ const Destination = () => {
                 <div className="lg:w-1/2 md:ml-10 block pb-14">
                   <img
                     className="m-auto w-1/3 lg:w-auto"
-                    alt="Planet Image"
+                    alt="Planet"
                     src={planet.images.png}
                   />
                 </div>

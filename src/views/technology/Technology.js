@@ -32,7 +32,7 @@ const Technology = () => {
           </div>
           {data.map((tech, idx) =>
             techIndex === idx ? (
-              <div key={idx} className="lg:flex lg:justify-evenly">
+              <div key={`tech-${idx}`} className="lg:flex lg:justify-evenly">
                 <div className="w-full block pb-14 lg:hidden">
                   <img
                     alt="Landscape"
@@ -43,7 +43,7 @@ const Technology = () => {
                 <div className="w-full flex justify-center pb-14 lg:w-1/4 lg:block text-white">
                   {data.map((_, idx) => (
                     <TechSelector
-                      key={idx}
+                      key={`selector-${idx}`}
                       techIndex={techIndex}
                       idx={idx}
                       setTechIndex={setTechIndex}

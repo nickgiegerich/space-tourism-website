@@ -35,7 +35,7 @@ const Crew = () => {
                 <div className="block sm:hidden">
                   <img
                     className="m-auto w-1/2"
-                    alt="Crew Member Image"
+                    alt="Crew Member"
                     src={member.images.png}
                   />
                 </div>
