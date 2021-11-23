@@ -25,7 +25,7 @@ const NavBar = () => {
               <span className="flex flex-col justify-center h-full whitespace-nowrap">
                 <Link key={item.label} to={item.to}>
                   <div>
-                    <span className="font-bold font-mono text-white text-lg">
+                    <span className="font-bold font-mono text-white hidden lg:inline-block text-lg">
                       0{idx}
                     </span>{" "}
                     <span className="font-light text-white text-lg">
