@@ -28,7 +28,7 @@ const NavBar = () => {
     <div className="flex w-full justify-between fixed z-50">
       <div className="w-1/3 mt-8 sm:w-1/2 md:w-1/2 lg:w-full lg:mt-8 flex items-center justify-items-start">
         <div className="pl-10">
-          <img src="/logos/logo.svg" />
+          <img alt="Logo" src="/logos/logo.svg" />
         </div>
         <div className="border-gray-500 border-b w-full ml-10 -mr-6 z-30 hidden sm:hidden md:hidden lg:block"></div>
       </div>
@@ -67,13 +67,13 @@ const NavBar = () => {
         {menuOpen && (
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {" "}
-            <img src="/logos/icon-close.svg" />
+            <img alt="close" src="/logos/icon-close.svg" />
           </button>
         )}
         {!menuOpen && (
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {" "}
-            <img src="/logos/icon-hamburger.svg" />
+            <img alt="hamburger" src="/logos/icon-hamburger.svg" />
           </button>
         )}
       </div>

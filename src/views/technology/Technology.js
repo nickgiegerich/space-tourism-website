@@ -35,13 +35,19 @@ const Technology = () => {
               <div key={idx} className="lg:flex lg:justify-evenly">
                 <div className="w-full block pb-14 lg:hidden">
                   <img
+                    alt="Landscape"
                     className="w-full"
                     src={tech.images.landscape}
                   />
                 </div>
                 <div className="w-full flex justify-center pb-14 lg:w-1/4 lg:block text-white">
                   {data.map((_, idx) => (
-                    <TechSelector key={idx} techIndex={techIndex} idx={idx} setTechIndex={setTechIndex} />
+                    <TechSelector
+                      key={idx}
+                      techIndex={techIndex}
+                      idx={idx}
+                      setTechIndex={setTechIndex}
+                    />
                   ))}
                 </div>
                 <div className="lg:w-2/3 lg:block">
@@ -49,6 +55,7 @@ const Technology = () => {
                 </div>
                 <div className="lg:w-1/4 xl:w-1/3 hidden lg:block lg:absolute right-0 bottom-28">
                   <img
+                    alt="Portrait"
                     className="w-full"
                     src={tech.images.portrait}
                   />
