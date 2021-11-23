@@ -36,8 +36,20 @@
     z-index: 0; 
 }
 
+.tech-bg { 
+    background: url("./img/background-technology-desktop.jpg") no-repeat 50% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 76px 0 94px 0;
+    position: relative;
+    min-height: 100vh;
+    z-index: 0; 
+}
+
 .main { 
-    padding-top: 136px;
+    padding-top: 100px;
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
@@ -75,8 +87,19 @@
     .destination-bg-img { 
         background-image: url("./img/background-destination-tablet.jpg");
     }
-    .crew-bg-img { 
-        background-image: url("./img/background-crew-tablet.jpg");
+    .crew-bg { 
+        background: url("./img/background-crew-tablet.jpg") no-repeat 50% fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .tech-bg { 
+        background: url("./img/background-technology-tablet.jpg") no-repeat 50% fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 }
 
@@ -87,7 +110,18 @@
     .destination-bg-img { 
         background-image: url("./img/background-destination-mobile.jpg");
     }
-    .crew-bg-img { 
-        background-image: url("./img/background-crew-mobile.jpg");
+    .crew-bg{ 
+        background: url("./img/background-crew-mobile.jpg") no-repeat 50% fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .tech-bg { 
+        background: url("./img/background-technology-mobile.jpg") no-repeat 50% fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 }

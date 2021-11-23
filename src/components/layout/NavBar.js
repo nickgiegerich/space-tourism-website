@@ -5,7 +5,7 @@ const navitems = [
   { label: "Home", to: "/" },
   { label: "Destination", to: "/destination" },
   { label: "Crew", to: "/crew" },
-  { label: "Technology", to: "/technology" },
+  { label: "Technology", to: "/tech" },
 ];
 
 const NavBar = () => {
