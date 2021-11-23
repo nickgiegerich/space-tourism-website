@@ -10,6 +10,20 @@ const navitems = [
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activePage, setActivePage] = useState(false);
+
+  useEffect(() => {
+    const path = window.location.pathname;
+    if (path === "/") {
+      setActivePage(0);
+    } else if (path === "/destination") {
+      setActivePage(1);
+    } else if (path === "/crew") {
+      setActivePage(2);
+    } else if (path === "/tech") {
+      setActivePage(3);
+    }
+  }, []);
   return (
     <div className="flex w-full justify-between fixed z-50">
       <div className="w-1/3 mt-8 sm:w-1/2 md:w-1/2 lg:w-full lg:mt-8 flex items-center justify-items-start">
@@ -21,9 +35,20 @@ const NavBar = () => {
       <div className="bg-white hidden sm:block w-full lg:mt-8 z-10 bg-opacity-10 h-24 backdrop-filter backdrop-blur-lg rounded-sm shadow-2xl">
         <div className="flex justify-evenly h-full items-center">
           {navitems.map((item, idx) => (
-            <div key={idx} className="border-b-4 text-center h-full">
+            <div
+              key={idx}
+              className={`transition text-center h-full border-b-4  ${
+                activePage === idx
+                  ? "border-b-4"
+                  : "border-transparent hover:border-gray-500"
+              }`}
+            >
               <span className="flex flex-col justify-center h-full whitespace-nowrap">
-                <Link key={item.label} to={item.to}>
+                <Link
+                  key={item.label}
+                  to={item.to}
+                  onClick={() => setActivePage(idx)}
+                >
                   <div>
                     <span className="font-bold font-mono text-white hidden lg:inline-block text-lg">
                       0{idx}

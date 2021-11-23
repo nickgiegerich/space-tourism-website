@@ -13,15 +13,16 @@
     z-index: -100;
 }
 
-.destination-bg-img { 
-    background-image: url("./img/background-destination-desktop.jpg");
+.destination-bg { 
+    background: url("./img/background-destination-desktop.jpg") no-repeat 50% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    overflow: scroll;
-    z-index: -100;
+    padding: 76px 0 94px 0;
+    position: relative;
+    min-height: 100vh;
+    z-index: 0; 
 }
 
 .crew-bg { 
@@ -84,8 +85,12 @@
     .home-bg-img-desktop { 
         background-image: url("./img/background-home-tablet.jpg");
     }
-    .destination-bg-img { 
+    .destination-bg { 
         background-image: url("./img/background-destination-tablet.jpg");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
     .crew-bg { 
         background: url("./img/background-crew-tablet.jpg") no-repeat 50% fixed;
@@ -107,8 +112,12 @@
     .home-bg-img-desktop { 
         background-image: url("./img/background-home-mobile.jpg");
     }
-    .destination-bg-img { 
+    .destination-bg { 
         background-image: url("./img/background-destination-mobile.jpg");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
     .crew-bg{ 
         background: url("./img/background-crew-mobile.jpg") no-repeat 50% fixed;
