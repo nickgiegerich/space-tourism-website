@@ -2,7 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
 .home-bg-img-desktop { 
+    animation: fadeInAnimation ease .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     background-image: url("./img/background-home-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,6 +33,9 @@
 }
 
 .destination-bg { 
+    animation: fadeInAnimation ease .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     background: url("./img/background-destination-desktop.jpg") no-repeat 50% fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -26,6 +48,9 @@
 }
 
 .crew-bg { 
+    animation: fadeInAnimation ease .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     background: url("./img/background-crew-desktop.jpg") no-repeat 50% fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -38,6 +63,9 @@
 }
 
 .tech-bg { 
+    animation: fadeInAnimation ease .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     background: url("./img/background-technology-desktop.jpg") no-repeat 50% fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -50,6 +78,9 @@
 }
 
 .main { 
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     padding-top: 100px;
     max-width: 1440px;
     width: 100%;
